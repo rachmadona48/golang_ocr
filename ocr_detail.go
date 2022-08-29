@@ -77,6 +77,7 @@ func readPdf(path string) (string, error) {
 	}
 	new_word2 := strings.Join(new_word, " ")
 	new_word3 := strings.Join(strings.Split(new_word2, "Total")[:1], "Total")
+	fmt.Println(new_word3)
 
 	var start_line int = 10
 	var last_line int = 780
